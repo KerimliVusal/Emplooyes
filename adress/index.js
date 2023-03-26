@@ -1,12 +1,12 @@
 import NextCors from 'nextjs-cors'
-const BASE_URL="employe-theta.vercel.app"
+const BASE_URL=""
 export const getUsers=async ()=>{
     try{
         const Options={
             method:"GET",
             headers:{"Content-Type":"application/json"}}
 
-    const fetchdata1= await  fetch(`${BASE_URL}/api/users/user`,Options)
+    const fetchdata1= await  fetch(`/api/users/user`,Options)
     const jsondata=await fetchdata1.json()
     return jsondata
     }
@@ -22,7 +22,7 @@ export const addUser=async(formdata)=>{
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(formdata)
         }
-    const  fetchdata= await fetch(`${BASE_URL}/api/users/user`,Options)
+    const  fetchdata= await fetch(`/api/users/user`,Options)
     const jsondata=await fetchdata.json()
     return jsondata
     }
@@ -38,7 +38,7 @@ export const updateUser=async(userId,formdata)=>{
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(formdata)
         }
-    const fetchdata= await fetch(`${BASE_URL}/api/users/user`,Options)
+    const fetchdata= await fetch(`/api/users/user`,Options)
     const jsondata=await fetchdata.json()
     return jsondata
     }
@@ -53,7 +53,7 @@ export const deleteUser=async(userId)=>{
           
             
         }
-    const fetchdata= await NextCors(fetch(`${BASE_URL}/api/users/user`,Options))
+    const fetchdata= await NextCors(fetch(`/api/users/user`,Options))
     const jsondata=await fetchdata.json()
     return jsondata
     }
