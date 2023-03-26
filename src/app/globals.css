@@ -1,0 +1,183 @@
+body{
+  /* background: linear-gradient(45deg ,rgb(230, 230, 247),rgb(240, 240, 255)); */
+
+}
+.input1 input{
+  margin: 10px;
+  width: 300px;
+  padding:7px;
+  border:1px solid rgb(128, 126, 126);
+}
+.form1{
+text-align: left;
+
+
+}
+
+.input2 input{
+  margin: 20px;
+
+  
+}
+.sub{
+  width: 50%;
+  margin: 10px;
+  background-color: rgb(35, 22, 212);
+color: white;
+border: none;
+padding: 10px;
+}
+.sub2{
+  width: 130px;
+  margin: 10px;
+  background-color: rgb(192, 179, 0);
+color: white;
+border: none;
+padding: 10px;
+}
+
+.sub:hover{
+  background-color: rgb(88, 88, 187);
+ 
+}
+.addemployee{
+text-align:left;
+}
+.addemployee button{
+margin-left: 10px;
+background-color: rgb(59, 59, 201);
+color: white;
+padding: 10px;
+border: none;
+box-shadow: -3px 2px 1px 1px rgb(58, 58, 58);
+}
+.addemployee button:hover{
+  background-color: rgb(96, 96, 184);
+}
+thead{
+  background-color: rgb(3, 110, 30);
+  color: white;
+  column-span:none;
+  text-align: center;
+}
+.img{
+border-radius:50%;}
+.brush1{
+  text-align: center;
+}
+.brush{
+  padding-right: 10px;
+}
+.imagespan{
+  margin-right: 10px;
+}
+.nav {
+  color: rgb(212, 186, 33);
+  display: flex;
+  justify-content: center;
+  text-shadow: -5px -1px 3px rgb(26, 25, 25);
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin: 30px;
+}
+tbody{
+  background-color: azure;
+}
+@keyframes load {
+  0%{
+      opacity: 0.08;
+/*         font-size: 10px; */
+/* 				font-weight: 400; */
+      filter: blur(5px);
+      letter-spacing: 3px;
+      }
+  100%{
+/*         opacity: 1; */
+/*         font-size: 12px; */
+/* 				font-weight:600; */
+/* 				filter: blur(0); */
+      }
+}
+
+.animate {
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin: auto;
+/* 	width: 350px; */
+/* 	font-size:26px; */
+font-family: Helvetica, sans-serif, Arial;
+animation: load 3.2s infinite 0s ease-in-out;
+animation-direction: alternate;
+text-shadow: -5px -1px 3px rgb(26, 25, 25);
+color: rgb(212, 186, 33);
+font-weight: 700;
+
+}
+.audo{
+  display:none;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color:black;
+  position: absolute;
+  top:25%;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid rgb(61, 61, 61);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: 0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+.loa{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  background-color: aliceblue;
+  
+}
