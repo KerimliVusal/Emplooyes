@@ -1,5 +1,5 @@
 import NextCors from 'nextjs-cors'
-const BASE_URL="employe.vercel.app"
+const BASE_URL="employe-theta.vercel.app"
 export const getUsers=async ()=>{
     try{
         const Options={
